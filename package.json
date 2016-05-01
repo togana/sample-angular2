@@ -1,0 +1,19 @@
+{
+  "name": "sample-anglar2",
+  "version": "0.0.0",
+  "description": "Angular2 Gulp Typescript and Express",
+  "main": "dist/server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/togana/sample-angular2.git"
+  },
+  "author": "togana",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/togana/sample-angular2/issues"
+  },
+  "homepage": "https://github.com/togana/sample-angular2#readme"
+}
