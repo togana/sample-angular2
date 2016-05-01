@@ -31,6 +31,8 @@
     "gulp-concat": "^2.6.0",
     "gulp-sourcemaps": "^2.0.0-alpha",
     "gulp-typescript": "^2.13.0",
-    "run-sequence": "^1.1.5"
+    "run-sequence": "^1.1.5",
+    "tsd": "^0.6.5",
+    "typescript": "^1.8.10"
   }
 }
