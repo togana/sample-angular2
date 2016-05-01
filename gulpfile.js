@@ -46,13 +46,26 @@ gulp.task('build:index', function(){
   return [copyJsNPMDependencies, copyIndex];
 });
 
+// build app
+gulp.task('build:app', function(){
+  var tsProject = ts.createProject('client/tsconfig.json');
+  var tsResult = gulp.src('client/**/*.ts')
+    .pipe(sourcemaps.init())
+    .pipe(ts(tsProject))
+	return tsResult.js
+    .pipe(sourcemaps.write())
+    .pipe(gulp.dest('dist'))
+});
+
 // build
 gulp.task('build', function(callback){
   runSequence(
     'build:clean',
     'build:server',
     'build:index',
-    callback);
+    'build:app',
+    callback
+  );
 });
 
 gulp.task('default', ['build']);
