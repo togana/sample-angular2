@@ -4,6 +4,7 @@
   "description": "Angular2 Gulp Typescript and Express",
   "main": "dist/server.js",
   "scripts": {
+    "start": "node dist/server.js",
     "tsd:server": "cd server/ && tsd",
     "build": "gulp build",
     "test": "echo \"Error: no test specified\" && exit 1"
